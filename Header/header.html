@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/8548bca167.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- 1st Header -->
+    <nav class="navbar is-transparent">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <span class="icon-text">
+                    <span class="icon fa-stack fa-lg">
+                        <i class="fas fa-circle fa-stack-2x has-text-primary"></i>
+                        <i class="fas fa-asterisk fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <span>
+                        <h3 class="title is-5 pl-1 pt-3">BULMA BLOCKS</h3>
+                    </span>
+                </span>
+            </a>
+            <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="#">
+                    First Link
+                </a>
+                <a class="navbar-item" href="#">
+                    Second Link
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="#">
+                        Dropdowns
+                    </a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item" href="#">
+                            Dropdown 1
+                        </a>
+                        <a class="navbar-item" href="#">
+                            Dropdown 2
+                        </a>
+                        <a class="navbar-item" href="#">
+                            Dropdown 3
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="#">
+                            Dropdown 4
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="field is-grouped">
+                        <p class="control">
+                            <a class="bd-tw-button button" target="_blank" href="#">
+                                <span>
+                                    Button 1
+                                </span>
+                                <span class="icon">
+                                    <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </a>
+                        </p>
+                        <p class="control">
+                            <a class="button is-primary" href="#">
+                                <span class="icon">
+                                    <i class="fas fa-download"></i>
+                                </span>
+                                <span>Button 2</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- 1st Navbar -->
+
+    <br /><br /><br /><br /><br />
+
+    <!-- 2nd Navbar -->
+    <nav class="navbar is-transparent">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <span class="icon-text">
+                    <span class="icon fa-stack fa-lg">
+                        <i class="fas fa-circle fa-stack-2x has-text-primary"></i>
+                        <i class="fas fa-asterisk fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <span>
+                        <h3 class="title is-5 pl-1 pt-3">BULMA BLOCKS</h3>
+                    </span>
+                </span>
+            </a>
+            <div class="navbar-burger" data-target="navbarExampleTransparentExample1">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="navbarExampleTransparentExample1" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="#">
+                    First Link
+                </a>
+                <a class="navbar-item" href="#">
+                    Second Link
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="#">
+                        Dropdowns
+                    </a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item" href="#">
+                            Dropdown 1
+                        </a>
+                        <a class="navbar-item" href="#">
+                            Dropdown 2
+                        </a>
+                        <a class="navbar-item" href="#">
+                            Dropdown 3
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="#">
+                            Dropdown 4
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-item">
+                    <p class="control">
+                        <a class="button is-primary" href="#">
+                            <span>Button 1</span>
+                            <span class="icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+
+                    });
+                });
+            }
+
+        });</script>
+
+</body>
+
+</html>
